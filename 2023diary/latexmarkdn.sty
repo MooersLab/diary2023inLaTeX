@@ -1,0 +1,62 @@
+\ProvidesPackage{latexmarkdn}
+
+\RequirePackage{luatexbase}
+
+\RequirePackage{kvoptions}
+\DeclareStringOption{extensions}
+\DeclareStringOption{template}
+\DeclareBoolOption{document}
+\ProcessKeyvalOptions*
+
+\directlua{%
+  unpack = unpack or table.unpack
+  loadstring = loadstring or load
+  local extensionstring = "\latexmarkdn@extensions"
+  local extensions 
+  if string.len(extensionstring) > 0 then
+  %local extensions = {}
+    extensions= string.explode(extensionstring,",")
+  end
+  %for _,ex in ipairs() do
+  %  local ex = ex:gsub(" ","")
+  %  extensions[ex] = true
+  %end
+  latexmark = require "latexmarkdn"
+  latexmark.init(extensions)
+  latexmark.save_template("\latexmarkdn@template")
+}
+
+\newcommand\latexmark@start{\directlua{luatexbase.add_to_callback("process_input_buffer",latexmark.callback,"latexmark")}}
+\newcommand\latexmark@end{\directlua{%
+    luatexbase.remove_from_callback("process_input_buffer", "latexmark")
+    latexmark.process()
+}}
+
+\iflatexmarkdn@document
+\AtBeginDocument{%
+  \latexmark@start
+  \directlua{latexmark.end_env = '\noexpand\\end{document}'}
+}
+\AtEndDocument{\latexmark@end}
+\fi
+
+\newenvironment{latexmark}
+{\latexmark@start}
+{\latexmark@end}
+
+\newcommand\markdownfile[1]{%
+  \directlua{%
+    local f = io.open("\luatexluaescapestring{#1}","r")
+    if not f then 
+      print('latexmark warning: file "#1" cannot be found') 
+    else
+      local lines = f:read("*all")
+      latexmark.callback(lines, true)
+      f:close()
+      latexmark.process()
+    end
+  }
+}
+
+\endinput
+

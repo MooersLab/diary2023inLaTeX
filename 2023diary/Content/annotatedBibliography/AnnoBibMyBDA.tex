@@ -1,0 +1,38 @@
+%% This is annot.tex.
+%% 
+%% You'll need to change the title and author fields to reflect your
+%% information.
+%%
+%% Author: Titus Barik (titus@barik.net)
+%% Homepage: http://www.barik.net/sw/ieee/
+%% Reference: http://www.ctan.org/tex-archive/info/simplified-latex/
+%% bibtool -x ../main.aux -o AnnoBibMyBDA.bib
+\documentclass[11pt]{article}
+\usepackage[letterpaper, total={7in, 9in}]{geometry}
+\usepackage{apacite}
+\title{Annotated Bibliography}
+\author{Blaine Mooers (blaine-mooers@ouhsc.edu)\\University of Oklahoma Health Sciences Center}
+
+
+\begin{document}
+
+\begin{center}
+{
+\Large\textbf{Annotated Bibliography}
+\medskip
+
+   { \large   Blaine H. M. Mooers, Ph.D. \\
+\medskip
+Department of Biochemistry and Molecular Biology \\
+\medskip
+University of Oklahoma Health Sciences Center \\
+\medskip
+\today}
+}
+\end{center}
+
+\nocite{*}
+\bibliographystyle{apacannx}
+\bibliography{AnnoBibMyBDA}
+\end{document}
+

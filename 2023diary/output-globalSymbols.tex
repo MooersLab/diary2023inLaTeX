@@ -1,0 +1,49 @@
+%%%%%%%%%%%%%%%%%%%%  Symbol list
+\newglossary[slg]{symbolslist}{syi}{syg}{Symbolslist} % create add. symbolslist
+
+
+\glsaddkey{unit}{\glsentrytext{\glslabel}}{\glsentryunit}{\GLsentryunit}{\glsunit}{\Glsunit}{\GLSunit}
+
+\makeglossaries                                   % activate glossaries-package
+
+\loadglsentries{\jobname-globalSymbols}
+%==== EXEMPLARY ENTRY FOR SYMBOLS LIST =========================================
+   \newglossaryentry{symb:Pi}{name=\ensuremath{\pi},
+       description={Geometrical value},
+       unit={},
+       type=symbolslist}
+
+   \newglossaryentry{height}{name=\ensuremath{h},
+       description={Height of tower},
+       unit={\si{m}},
+       type=symbolslist}
+
+   \newglossaryentry{energyconsump}{name=\ensuremath{P},
+       description={Energy consumption},
+       unit={\si{kW}},
+       type=symbolslist}
+
+   \newglossaryentry{symb:Phi}{ 
+        name = $\varphi$,
+        description = {Any angle.} ,
+        Sort = symbolphi, type = symbolslist
+        } 
+        
+   \newglossaryentry{symb:lambda}{ 
+        name = $\lambda$,
+        description = { An arbitrary number, with the following expression
+        Is multiplied. } ,
+        Sort = symbollambda, type = symbolslist
+        } 
+
+   \newglossaryentry{symb:alpha}{ 
+        name = $\alpha$,
+        description = { angle } ,
+        Sort = symbollambda, type = symbolslist
+        } 
+        
+   \newglossaryentry{symb:beta}{ 
+        name = $\beta$,
+        description = { angle } ,
+        Sort = symbollambda, type = symbolslist
+        } 

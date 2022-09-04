@@ -1,0 +1,89 @@
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Need to edit below  %%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%% Title, Subtitle, and Author(s)     %%%%%%%%%%%%%%
+%\titlehead{\centering\inputgraphics[width=6cm]{images/xtal}}, does not work in this svmono.cls
+
+%  %%%%%%%%%%%%%%%%%%%%%%%%%%% Candidate Titles  %%%%%%%%%%%%%%%%
+% Solution Scattering Studies in Integrative Structural Molecular Biology Research
+% A Practical Biological Solution Scattering
+% Practical X-ray Solution Scattering for Biologists
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%  Need to edit image %%%%%%%%%%%%%%%%%%%%%%%
+% Definition of \maketitle
+\title{Daily Writing}
+\subtitle{Everything included}
+\author{Blaine Mooers}
+% \subtitle{-- Monograph --}
+\makeatletter         
+\def\@maketitle{
+\begin{center}
+{\Huge \bfseries \sffamily \@title }\\[4ex] 
+{\Large \bfseries \sffamily \@subtitle }\\[4ex] 
+{\Large  \@author}\\[4ex] 
+\@date\\[8ex]
+\vspace{1cm}
+\includegraphics[width = 150mm]{./Content/Figures/scatter2.png}
+\end{center}}
+\makeatother
+
+%%%%% Begin document here %%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+\begin{document}
+\maketitle
+\newpage
+\frontmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+
+%\include{dedic}
+\include{./Content/Preface}
+\tableofcontents
+\listoffigures
+\listoftables
+\renewcommand\listoflistingscaption{List of source codes}
+\listoflistings
+\mainmatter%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%Set the chapter counter so that the first chapter is counted as Chapter 1.
+
+\part{2022}
+\setcounter{chapter}{0}
+\input{./Content/January/January2023}
+\input{./Content/February/February2023}
+\input{./Content/March/March2023}
+\input{./Content/April/April2023}
+\input{./Content/May/May2023}
+\input{./Content/June/June2023}
+\input{./Content/July/July2023}
+\input{./Content/August/August2023}
+\input{./Content/September/September2023}
+\input{./Content/October/October2023}
+\input{./Content/November/November2023}
+\input{./Content/December/December2023}
+
+\part{Appendices}
+This is a test \cite{Mooers2016DirectMethodsStructureDeterminationOfATrypanosomeRNAEditingSubstrateFragmentWithTranslationalPseudosymmetry}.
+\appendix
+%\input{./Content/ChDeadlines2022}
+%\input{./Content/ChAccomplishments2022}
+% \input{./Content/ChAccomplishments2021}
+% \input{./Content/ChAccomplishments2020}
+%\input{./Content/ChAnnualPlan2022}
+% \input{./Content/ChAnnualPlan2021}
+% \input{./Content/ChAnnualPlan2020}
+% \input{./Content/ChBookReviews}
+% \input{./Content/ChBSCOKCLBSFoutreach}
+% \input{./Content/ChGiftIdeas}
+% \input{./Content/ChGrantDeadlines}
+% \input{./Content/ChImprovingGraduateEducation}
+% \input{./Content/ChMeetingDeadlines}
+% \input{./Content/ChMyBiographies} 
+% \input{./Content/ChPublicationHeirarchy}
+% \input{./Content/ChPythonSelfStudy}
+% \input{./Content/ChPythonWorkshop}
+% \input{./Content/ChReadingLists}
+% \input{./Content/ChSCUGtalks}
+% \input{./Content/ChToBeDone}
+\part{Backmatter}
+\backmatter %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliography{global}
+% listofauthors must come before index
+%\listofauthors
+\printindex
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\end{document}

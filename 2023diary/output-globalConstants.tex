@@ -1,0 +1,34 @@
+%%%%%%%%%%%%%%%%%%%%  Constant list  % I need to research this matter when I have more time.
+\newglossary[slg]{symbolslist}{syi}{syg}{Constantslist} % create add. symbolslist
+
+
+\glsaddkey{unit}{\glsentrytext{\glslabel}}{\glsentryunit}{\GLsentryunit}{\glsunit}{\Glsunit}{\GLSunit}
+
+\makeglossaries                                   % activate glossaries-package
+
+\loadglsentries{\jobname-globalSymbols}
+%==== EXEMPLARY ENTRY FOR SYMBOLS LIST =========================================
+
+   \newglossaryentry{lightspeed}{name=\ensuremath{c},
+       description={speed of light in vacuum},
+       values={2.99792},
+
+       unit={\si{ 10^8}m s^1}},
+       cgsunits={\si{m}},
+
+
+       type=symbolslist}
+
+
+   \newglossaryentry{height}{name=\ensuremath{h},
+       description={Height of tower},
+       unit={\si{m}},
+       type=symbolslist}
+
+   \newglossaryentry{energyconsump}{name=\ensuremath{P},
+       description={Energy consumption},
+       unit={\si{kW}},
+       type=symbolslist}
+
+
+

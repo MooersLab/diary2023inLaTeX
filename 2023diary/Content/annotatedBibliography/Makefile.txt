@@ -1,0 +1,15 @@
+# Makefile for IEEE formatted annotated bibliography.
+#
+# Author: Titus Barik (titus@barik.net)
+
+annot.pdf: annotNAR.tex annotNAR.bib
+	pdflatex annotNAR
+	bibtex annotNAR
+	pdflatex annotNAR
+	pdflatex annotNAR
+	@echo "================================================"
+	@echo "All done! annot.pdf has been created. - Titus"
+	@echo "================================================"
+
+clean:
+	rm -rf annotNAR.log annotNAR.blg annotNAR.bbl annotNAR.aux
