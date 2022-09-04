@@ -120,17 +120,58 @@ Or just run the compile.sh script externally to Emacs.
 See the `latex-emacs` repo for a sample configuration.
 If you have citations, you will have to run bibtex on main.tex.
 
-## Best of both worlds: use local editor to edit pages on Overleaf
+## Best of both worlds: use local editor to edit today entry on Overleaf
 
 The Google Chrome extension supports the use of local editors to edit text areas in web browsers.
 The daily.tex file is a text area when open in Overleaf.
-You can bring you favorite LaTeX snippets to Overleaf.
-See the end of this [slideshow](https://github.com/MooersLab/BerlinEmacsAugust2022) for the application of GhostText to LaTeX editing with Emacs.
+You can bring you favorite LaTeX yasnippet snippets to Overleaf.
 
+For example, I start the day by opening Emacs, logging into 750words, and clicking on the GhostText icon to open the connection to Emacs.
+In Emacs in the `Write your words` buffer, I enter ``start'' and hitting tab or C-o. 
+This action inserts the following boilerplate:
+
+
+```latex
+\subsection{Last night}
+change me
+
+
+\subsection{This morning}
+change me
+
+
+\subsection{To Be Done Today}
+\index{To Be Done!2022-09-04}
+\begin{itemize}
+\item change me
+\item change me
+\item change me
+\item change me
+\item change me
+\item change me
+\item change me
+\item change me
+\item change me
+\item change me
+\end{itemize}
+% 0
+
+```
+
+The cursor advances to ``change me'' under *Last night*.
+I make some notes about what I did.
+Then I hit tab to advance to the next change me to make notes about the morning.
+I hit tab again to advance to the first item in my todo list for the day.
+When I reach the bottom of the list, I enter `C-c C-j` to enter the next *\item* properly aligned and with the cursor in the right postion.
+
+A script inside the yasnippet snippet called start inserts the correct date in the index key.
+I create an index key without lifting a finger.
+See, Life can be Good in Emacs!
+
+See the end of this [slideshow](https://github.com/MooersLab/BerlinEmacsAugust2022) for the application of GhostText to LaTeX editing with Emacs.
 For the Jupyter users, you can likewise use GhostText to edit code and markdown cells with your favorite editor.
 See [slideshow](https://github.com/MooersLab/DSW22ghosttext) about this exciting topic.
 See corresponding [video](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d).
-
 
 
 
