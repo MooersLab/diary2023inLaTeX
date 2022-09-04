@@ -125,7 +125,7 @@ If you have citations, you will have to run bibtex on main.tex.
 The Google Chrome extension supports the use of local editors to edit text areas in web browsers.
 The daily.tex file is a text area when open in Overleaf.
 You can bring you favorite LaTeX snippets to Overleaf.
-See the end of this [slideshow]().
+See the end of this [slideshow](https://github.com/MooersLab/BerlinEmacsAugust2022) for the application of GhostText to LaTeX editing with Emacs.
 
 For the Jupyter users, you can likewise use GhostText to edit code and markdown cells with your favorite editor.
 See [slideshow](https://github.com/MooersLab/DSW22ghosttext) about this exciting topic.
