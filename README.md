@@ -167,7 +167,7 @@ When I reach the bottom of the list, I enter `C-c C-j` to enter the next **\item
 
 A script inside the yasnippet snippet called start inserts the correct date in the index key.
 I create an index key without lifting a finger.
-See, Life can be Good in Emacs!
+**See, Life can be Good in Emacs!**
 
 See the end of this [slideshow](https://github.com/MooersLab/BerlinEmacsAugust2022) for the application of GhostText to LaTeX editing with Emacs.
 For the Jupyter users, you can likewise use GhostText to edit code and markdown cells with your favorite editor.
