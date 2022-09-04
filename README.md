@@ -3,6 +3,7 @@
 ## What is this?
 
 This repo contains a template book with 365 blank tex files, one for each day of the year.
+These tex files are collated and rendered into a PDF with latex and bibtex compilers.
 It is set up for 2023.
 It is configured to automatically generate the following:
 
@@ -38,10 +39,10 @@ This can be used for the following purposes:
 - storage site for daily writing
 
 This document's design was stimulated by the last use.
-I wanted an independent place to store my daily writing on \url{750words.com} where is it stored in markdown files that are hard to search.
-I wanted that writing to be indexable and searchable.
+I wanted an independent place to store my daily writing on [750words.com](https://750words.com) where is it stored in plain text files that are hard to search.
+I wanted that writing to be indexable and searchable in a single PDF for a calendar year rather than in 365 files.
 This documet has been very useful for finding information, including computer code, that I used in the past.
-If it is used as a "Captian's log" of ones own "Enterprise", it can be used to gather information for annual reports.
+If it is used as a ``Captian's log'' of ones own ``Enterprise'', it can be used to gather information for annual reports.
 Lists of accomplishments can be stored in the Appendix.
 
 ## Prior Experience
@@ -128,8 +129,8 @@ You can bring you favorite LaTeX yasnippet snippets to Overleaf.
 
 For example, I start the day by opening Emacs, logging into 750words, and clicking on the GhostText icon to open the connection to Emacs.
 In Emacs in the `Write your words` buffer, I enter `start' and hit `TAB` or `C-o`. 
-This action inserts the following boilerplate from the `start` snippet file, which is available above and from this [repo]():
-
+This action inserts the following boilerplate from the `start` snippet file, which is available above.
+I have [configured](https://github.com/MooersLab/latex-emacs) the Emacs package atomic-chrome to open `Write your words` in the latex-mode so that I can have access to my latex-mode snippets, which are available [here](https://github.com/MooersLab/snippet-latex-mode).
 
 ```latex
 \subsection{Last night}
