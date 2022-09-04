@@ -127,8 +127,8 @@ The daily.tex file is a text area when open in Overleaf.
 You can bring you favorite LaTeX yasnippet snippets to Overleaf.
 
 For example, I start the day by opening Emacs, logging into 750words, and clicking on the GhostText icon to open the connection to Emacs.
-In Emacs in the `Write your words` buffer, I enter ``start'' and hitting tab or C-o. 
-This action inserts the following boilerplate:
+In Emacs in the `Write your words` buffer, I enter `start' and hit `TAB` or `C-o`. 
+This action inserts the following boilerplate from the `start` snippet file, which is available above and from this [repo]():
 
 
 ```latex
