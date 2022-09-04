@@ -125,6 +125,8 @@ If you have citations, you will have to run bibtex on main.tex.
 The Google Chrome extension supports the use of local editors to edit text areas in web browsers.
 The daily.tex file is a text area when open in Overleaf.
 You can bring you favortie LaTeX snippets to Overleaf.
+See [slideshow](https://github.com/MooersLab/DSW22ghosttext) about this exciting topic.
+See corresponding video []().
 
 
 
