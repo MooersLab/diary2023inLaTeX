@@ -124,11 +124,11 @@ If you have citations, you will have to run bibtex on main.tex.
 ## Best of both worlds: use local editor to edit today entry on Overleaf
 
 The Google Chrome extension supports the use of local editors to edit text areas in web browsers.
-The daily.tex file is a text area when open in Overleaf.
-You can bring you favorite LaTeX yasnippet snippets to Overleaf.
+The opened *toadayDate.tex* file is a text area in Overleaf.
+You can bring you favorite LaTeX yasnippet snippets to Overleaf, which does not support snippets directly.
 
 For example, I start the day by opening Emacs, logging into 750words, and clicking on the GhostText icon to open the connection to Emacs.
-In Emacs in the `Write your words` buffer, I enter `start' and hit `TAB` or `C-o`. 
+In Emacs in the **Write your words** buffer, I enter `start` and hit `TAB` or `C-o`. 
 This action inserts the following boilerplate from the `start` snippet file, which is available above.
 I have [configured](https://github.com/MooersLab/latex-emacs) the Emacs package atomic-chrome to open `Write your words` in the latex-mode so that I can have access to my latex-mode snippets, which are available [here](https://github.com/MooersLab/snippet-latex-mode).
 
