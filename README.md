@@ -159,11 +159,11 @@ change me
 
 ```
 
-The cursor advances to ``change me'' under *Last night*.
+The cursor advances to *change me* under *Last night*.
 I make some notes about what I did.
 Then I hit tab to advance to the next change me to make notes about the morning.
 I hit tab again to advance to the first item in my todo list for the day.
-When I reach the bottom of the list, I enter `C-c C-j` to enter the next *\item* properly aligned and with the cursor in the right postion.
+When I reach the bottom of the list, I enter `C-c C-j` to enter the next **\item** properly aligned and with the cursor in the right postion.
 
 A script inside the yasnippet snippet called start inserts the correct date in the index key.
 I create an index key without lifting a finger.
