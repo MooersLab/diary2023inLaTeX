@@ -1,3 +1,10 @@
+
+![Version](https://img.shields.io/static/v1?label=diary2023inLaTeX&message=0.2&color=brightcolor)
+[![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
+
+
+
+
 # Diary for 2023 in LaTeX
 
 ## What is this?
@@ -206,3 +213,18 @@ See the corresponding [video](https://mediasite.ouhsc.edu/Mediasite/Channel/pyth
 - [Slides from talk about GhostText, Data Science Workshop, July 2022](https://github.com/MooersLab/DSW22ghosttext)
 - [Video link to talk about GhostText, Data Science Workshop, July 2022](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d)
 - [The writer's law](https://github.com/MooersLab/thewriterslaw)
+
+## Update history
+
+|Version      | Changes                                                                                                                                    | Date                 |
+|:-----------:|:------------------------------------------------------------------------------------------------------------------------------------------:|:--------------------:|
+| Version 0.2 |   Added badges, funding, and update table.                                                                                                 | 2024 May 23          |
+
+
+## Sources of funding
+
+- NIH: R01 CA242845
+- NIH: R01 AI088011
+- NIH: P30 CA225520 (PI: R. Mannel)
+- NIH: P20 GM103640 and P30 GM145423 (PI: A. West)
+
