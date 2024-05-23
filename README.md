@@ -42,7 +42,7 @@ This document's design was stimulated by the last use.
 I wanted an independent place to store my daily writing on [750words.com](https://750words.com), where it is stored in plain text files that are hard to search.
 I wanted that writing to be indexable and searchable in a single PDF for a calendar year rather than 365 files.
 This document has been very useful for finding information, including data wrangling protocols and computer code, that I used in the past.
-If it is used as a' Captian's log' of one's own Enterprise, it can gather information for annual reports.
+It can gather information for annual reports if used as a "Captian's log" of one's personal Enterprise.
 For example, lists of accomplishments can be stored in the Appendices.
 
 ## Prior Experience
@@ -56,7 +56,7 @@ It is part of my daily routine to paste the day's writing into this document bef
 Writing in LaTeX has some limitations:
 
 - The document is limited by computer RAM to one year. 
-- The document is limited by RAM regarding the number of lists and indices that can be generated at a time.
+- The document is limited by RAM regarding the number of lists and indices that can be generated simultaneously.
 - Debugging can sometimes involve commenting out chapters in the 0AAAContent document to isolate the error. 
 
 Not to worry! The debugger on Overleaf will locate the bug by document name and line number. 
@@ -70,7 +70,7 @@ I debug the old writing occasionally during the year when I am too tired to do a
 The *main.tex* document is fed to the compiler.
 
 Compile with lualatex and the `-escape-shell` key (for the minted package).
-The compile.sh script runs at the top level of the folder `2023diary`, which you can rename.
+The `compile.sh` script runs at the top level of the folder `2023diary`, which you can rename.
 The document is easy to compile with the click of a button using the Overleaf website.
 The empty shell document takes several seconds to compile.
 A 1000-page document will be compiled in about 60 seconds.
@@ -178,19 +178,19 @@ change me
 ```
 
 The cursor advances to `change me` under *Last night*.
-I make some notes about what I did.
-Then I hit tab to advance to the next `change me` to make notes about the morning.
+I write some notes about what I did.
+Then I hit tab to advance to the next `change me` to write notes about the morning.
 I hit tab again to advance to the first item in my TODO list for the day.
-When I reach the bottom of the list, I enter `C-c C-j` to enter the next **\item** properly aligned and with the cursor in the right postion.
+When I reach the bottom of the list, I enter `C-c C-j` to enter the next **\item** properly aligned and with the cursor in the right position.
 
-A called to a macro inside the yasnippet snippet called *start* inserts the correct date in the index key.
+A call to a macro inside the yasnippet snippet called *start* inserts the correct date in the index key.
 I create an index key without lifting a finger.
 **See, Life can be Good in Emacs!**
 
 See the end of this [slideshow](https://github.com/MooersLab/BerlinEmacsAugust2022) for the application of GhostText to LaTeX editing with Emacs.
-For the Jupyter users, you can likewise use GhostText to edit code and markdown cells with your favorite editor.
+For Jupyter users, you can likewise use GhostText to edit code and markdown cells with your favorite editor.
 See [slideshow](https://github.com/MooersLab/DSW22ghosttext) about this exciting topic.
-See corresponding [video](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d).
+See the corresponding [video](https://mediasite.ouhsc.edu/Mediasite/Channel/python/watch/4da0872f028c4255ae12935655e911321d).
 
 ## Related projects of possible interest
 
