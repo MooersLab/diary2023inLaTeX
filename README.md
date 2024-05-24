@@ -2,10 +2,9 @@
 ![Version](https://img.shields.io/static/v1?label=diary2023inLaTeX&message=0.2&color=brightcolor)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](https://opensource.org/licenses/MIT)
 
-
-
-
 # Diary for 2023 in LaTeX
+
+Go to this [site](https://github.com/MooersLab/diary2024inLaTeX) for the 2024 version of this diary.
 
 ## What is this?
 
